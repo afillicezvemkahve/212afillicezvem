@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürünlerimiz | Afilli Cezve'm</title>
+  <meta name="description" content="Afilli Cezve'm en özel bakır cezve, demlik ve Osmanlı kahvesi çeşitleri. 20'den fazla özel ürünü keşfedin.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" style="background: var(--bg-dark); position: relative;">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Afilli Cezve'm Logo">
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html" class="active">Ürünler</a></li>
+          <li><a href="index.html#hakkimizda">Hikayemiz</a></li>
+          <li><a href="index.html#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+      
+      <button class="nav-toggle" aria-label="Menüyü aç/kapat">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SAYFA İÇERİĞİ -->
+  <main class="section page-content" style="padding-top: 60px;">
+    <div class="container">
+      <div class="section-header-split text-center" style="justify-content: center; flex-direction: column; align-items: center; margin-bottom: 30px;">
+        <span class="eyebrow" style="text-align: center;">KOLEKSİYONUMUZ</span>
+        <h1 style="text-align: center;">Tüm Ürünlerimiz</h1>
+      </div>
+
+      <!-- FİLTRE BUTONLARI -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Tümü</button>
+        <button class="filter-btn" data-filter="cezve">Cezveler</button>
+        <button class="filter-btn" data-filter="caydanlik">Çaydanlıklar</button>
+        <button class="filter-btn" data-filter="bardak">Bardak & Fincan</button>
+        <button class="filter-btn" data-filter="tabak">Tabak & Tepsi</button>
+      </div>
+
+      <!-- ÜRÜNLER IZGARASI -->
+      <div class="products-page-grid" id="products-grid"></div>
+    </div>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Büyük Ürün Görseli">
+      <h3 id="lightbox-title"></h3>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Afilli Cezve'm Logo" class="f-logo">
+        <p>© 2026 Afilli Cezve'm Kahve & Bakır.<br>Tüm hakları saklıdır.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="urunler.html">Ürünler</a>
+        <a href="kvkk.html">KVKK Aydınlatma Metni</a>
+        <a href="sss.html">Sıkça Sorulan Sorular (S.S.S)</a>
+        <a href="https://share.google/v6dzBLZ42FNkpt2pv" target="_blank" rel="noopener">Google İşletme Profilimiz</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/afillicezvem" target="_blank" aria-label="Instagram">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Web Tasarım: <a href="https://webflux.com.tr" target="_blank" rel="noopener">webflux.com.tr</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
