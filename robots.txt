@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kullaniciadinz.github.io/sitemap.xml
+Sitemap: https://afillicezvem.com.tr/sitemap.xml
